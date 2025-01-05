@@ -30,6 +30,9 @@
     <ClCompile Include="NotificationFactory.cpp">
       <Filter>Source Files\Notification</Filter>
     </ClCompile>
+    <ClCompile Include="NotificationPublisher.cpp">
+      <Filter>Source Files\Notification</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NotificationIntf.h">
@@ -39,6 +42,12 @@
       <Filter>Header Files\Notification</Filter>
     </ClInclude>
     <ClInclude Include="NotificationFactory.h">
+      <Filter>Header Files\Notification</Filter>
+    </ClInclude>
+    <ClInclude Include="NotificationPublisherIntf.h">
+      <Filter>Header Files\Notification</Filter>
+    </ClInclude>
+    <ClInclude Include="NotificationPublisher.h">
       <Filter>Header Files\Notification</Filter>
     </ClInclude>
   </ItemGroup>
