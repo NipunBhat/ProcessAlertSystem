@@ -13,10 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Notification">
+      <UniqueIdentifier>{bfe0ee9e-5e85-4eab-88d9-17e866403d2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Notification">
+      <UniqueIdentifier>{f428a4de-0e29-44ae-a006-4b4e4d9c746a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ProcessMonitor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NotificationManager.cpp">
+      <Filter>Source Files\Notification</Filter>
+    </ClCompile>
+    <ClCompile Include="NotificationFactory.cpp">
+      <Filter>Source Files\Notification</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NotificationIntf.h">
+      <Filter>Header Files\Notification</Filter>
+    </ClInclude>
+    <ClInclude Include="NotificationManager.h">
+      <Filter>Header Files\Notification</Filter>
+    </ClInclude>
+    <ClInclude Include="NotificationFactory.h">
+      <Filter>Header Files\Notification</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

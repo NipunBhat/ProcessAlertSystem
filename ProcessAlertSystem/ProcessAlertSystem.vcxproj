@@ -127,7 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="NotificationFactory.cpp" />
+    <ClCompile Include="NotificationManager.cpp" />
     <ClCompile Include="ProcessMonitor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NotificationFactory.h" />
+    <ClInclude Include="NotificationIntf.h" />
+    <ClInclude Include="NotificationManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
