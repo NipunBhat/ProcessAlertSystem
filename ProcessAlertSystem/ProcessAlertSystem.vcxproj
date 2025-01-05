@@ -130,6 +130,8 @@
     <ClCompile Include="NotificationFactory.cpp" />
     <ClCompile Include="NotificationManager.cpp" />
     <ClCompile Include="NotificationPublisher.cpp" />
+    <ClCompile Include="ProcessMetrics.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="ProcessMonitor.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +140,8 @@
     <ClInclude Include="NotificationManager.h" />
     <ClInclude Include="NotificationPublisher.h" />
     <ClInclude Include="NotificationPublisherIntf.h" />
+    <ClInclude Include="ProcessMetrics.h" />
+    <ClInclude Include="ProcessMonitor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

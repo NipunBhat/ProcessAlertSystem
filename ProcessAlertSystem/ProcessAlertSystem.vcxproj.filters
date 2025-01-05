@@ -19,9 +19,15 @@
     <Filter Include="Source Files\Notification">
       <UniqueIdentifier>{f428a4de-0e29-44ae-a006-4b4e4d9c746a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProcessMonitoring">
+      <UniqueIdentifier>{bbf9dcfe-877b-4aca-b66f-ed4faf5c75b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ProcessMonitoring">
+      <UniqueIdentifier>{e6acda65-f2ab-45bc-85cc-d508f3d2f6c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ProcessMonitor.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="NotificationManager.cpp">
@@ -32,6 +38,12 @@
     </ClCompile>
     <ClCompile Include="NotificationPublisher.cpp">
       <Filter>Source Files\Notification</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessMetrics.cpp">
+      <Filter>Source Files\ProcessMonitoring</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessMonitor.cpp">
+      <Filter>Source Files\ProcessMonitoring</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -49,6 +61,12 @@
     </ClInclude>
     <ClInclude Include="NotificationPublisher.h">
       <Filter>Header Files\Notification</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessMetrics.h">
+      <Filter>Header Files\ProcessMonitoring</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessMonitor.h">
+      <Filter>Header Files\ProcessMonitoring</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
