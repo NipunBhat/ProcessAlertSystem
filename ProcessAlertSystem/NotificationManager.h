@@ -3,25 +3,25 @@
 #include "NotificationIntf.h"
 #include "NotificationPublisher.h"
 
-class SMSNotification : public INotification
+class CSMSNotification : public INotification
 {
 public:
-	SMSNotification();
+	CSMSNotification();
 	void Send(const std::string& message) override;
-	~SMSNotification();
+	virtual ~CSMSNotification();
 
-public:
+protected:
 
 private:
 	std::shared_ptr<CNotificationPublisher> _pNotifPublisher;
 };
 
-class EMAILNotification : public INotification
+class CEMAILNotification : public INotification
 {
 public:
-	EMAILNotification();
+	CEMAILNotification();
 	void Send(const std::string& message) override;
-	~EMAILNotification();
+	~CEMAILNotification();
 
 public:
 

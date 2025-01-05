@@ -4,16 +4,16 @@
 #include "NotificationManager.h"
 #include <memory>
 
-enum NotificationType
+enum ENotificationType
 {
 	EMAIL = 0,
 	SMS
 };
 
-class NotificationFactory
+class CNotificationFactory
 {
 public:
-	NotificationFactory();
-	static std::shared_ptr<INotification> CreateNotification(NotificationType type);
-	~NotificationFactory();
+	CNotificationFactory();
+	static std::shared_ptr<INotification> CreateNotification(ENotificationType type);
+	~CNotificationFactory();
 };

@@ -4,32 +4,32 @@
 #include "NotificationPublisher.h"
 #include <iostream>
 
-SMSNotification::SMSNotification()
+CSMSNotification::CSMSNotification()
 {
 	//NOP
 }
 
-SMSNotification::~SMSNotification()
+CSMSNotification::~CSMSNotification()
 {
 	//NOP
 }
 
-void SMSNotification::Send(const std::string &message)
+void CSMSNotification::Send(const std::string &message)
 {
 	std::cout << "SMS Notification :: " + message << std::endl;
 }
 
-EMAILNotification::EMAILNotification()
+CEMAILNotification::CEMAILNotification()
 {
 	//NOP
 }
 
-EMAILNotification::~EMAILNotification()
+CEMAILNotification::~CEMAILNotification()
 {
 	//NOP
 }
 
-void EMAILNotification::Send(const std::string& message)
+void CEMAILNotification::Send(const std::string& message)
 {
 	std::cout << "EMAIL Notification :: " + message << std::endl;
 }
