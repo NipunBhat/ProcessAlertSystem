@@ -1,6 +1,7 @@
 #pragma once
 
 #include "NotificationManager.h"
+#include "NotificationPublisher.h"
 #include <iostream>
 
 SMSNotification::SMSNotification()

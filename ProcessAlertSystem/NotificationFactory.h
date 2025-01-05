@@ -14,6 +14,6 @@ class NotificationFactory
 {
 public:
 	NotificationFactory();
-	std::shared_ptr<INotification> CreateNotification(NotificationType type);
+	static std::shared_ptr<INotification> CreateNotification(NotificationType type);
 	~NotificationFactory();
 };

@@ -9,7 +9,7 @@ public:
 	INotificationPublisher() = default;
 	virtual ~INotificationPublisher() = default;
 
-	virtual void Subscribe(std::shared_ptr<INotification> p_pNotification) = 0;
+	virtual void Attach(std::shared_ptr<INotification> p_pNotification) = 0;
 	virtual void Notify(const std::string& message) = 0;
 
 protected:

@@ -1,12 +1,21 @@
 #include <iostream>
-#include <string>
 #include <memory>
 #include <thread>
-#include <chrono>
-#include <vector>
+
+#include "ProcessMonitor.h"
+#include "NotificationFactory.h"
+#include "NotificationManager.h"
+#include "NotificationPublisher.h"
 
 int main()
 {
-	std::cout << "HELLO WORLD" << std::endl;
+	auto pNotificationPublisher = std::make_shared<CNotificationPublisher>();
+	pNotificationPublisher->Attach(NotificationFactory::CreateNotification(EMAIL));
+	pNotificationPublisher->Attach(NotificationFactory::CreateNotification(SMS));
+
+	CProcessMonitor processMonitor(pNotificationPublisher, 75, 80);
+	std::thread monitoringThread(&CProcessMonitor::Monitor, &processMonitor);
+	monitoringThread.join();
+
 	return 0;
 }

@@ -29,6 +29,8 @@ void CProcessMonitor::Monitor()
 			message = "CPU Usage Alert! CPU Usage : " + std::to_string(memoryUsage) + "%\n";
 			_notifPublisher->Notify(message);
 		}
+
+		std::this_thread::sleep_for(std::chrono::seconds(2));
 	}
-	std::this_thread::sleep_for(std::chrono::seconds(2));
+	
 }

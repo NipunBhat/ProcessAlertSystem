@@ -1,4 +1,5 @@
 #include "NotificationPublisher.h"
+#include "NotificationFactory.h"
 
 CNotificationPublisher::CNotificationPublisher()
 {
@@ -10,7 +11,7 @@ CNotificationPublisher::~CNotificationPublisher()
 	//NOP
 }
 
-void CNotificationPublisher::Subscribe(std::shared_ptr<INotification> p_pNotification)
+void CNotificationPublisher::Attach(std::shared_ptr<INotification> p_pNotification)
 {
 	vecObservers.push_back(p_pNotification);
 }
