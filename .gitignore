@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Vs related files
+.vs/
+ProcessAlertSystem/ProcessA.6f0cef76/
+
+
