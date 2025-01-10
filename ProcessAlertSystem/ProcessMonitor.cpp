@@ -27,8 +27,8 @@ void CProcessMonitor::Monitor()
 		}
 		else
 		{
-			std::cout << "CPU Usage is fine Threshold : " + std::to_string(_iCPUThreshold) + " ,Used : " +
-				std::to_string(cpuUsage) + "\n" << std::endl;
+			std::cout << "CPU Usage is fine Threshold : " + std::to_string(_iCPUThreshold) + "% ,Used : " +
+				std::to_string(cpuUsage) + "%\n" << std::endl;
 		}
 
 		if (memoryUsage > _iMemoryThreshold)
@@ -38,8 +38,8 @@ void CProcessMonitor::Monitor()
 		}
 		else
 		{
-			std::cout << "Memory Usage is fine Threshold : " + std::to_string(_iMemoryThreshold) + " ,Used : " +
-					std::to_string(memoryUsage) + "\n" << std::endl;
+			std::cout << "Memory Usage is fine Threshold : " + std::to_string(_iMemoryThreshold) + "% ,Used : " +
+					std::to_string(memoryUsage) + "%\n" << std::endl;
 		}
 		std::cout << "###########################################################\n" << std::endl;
 
