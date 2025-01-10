@@ -13,8 +13,8 @@ int main()
 	pNotificationPublisher->Attach(CNotificationFactory::CreateNotification(EMAIL));
 	pNotificationPublisher->Attach(CNotificationFactory::CreateNotification(SMS));
 
-	CProcessMonitor processMonitor(pNotificationPublisher, 75, 80);
-	std::thread monitoringThread(&CProcessMonitor::Monitor, &processMonitor);
+	auto processMonitior =  CProcessMonitor(pNotificationPublisher, 75, 80);
+	std::thread monitoringThread(&CProcessMonitor::Monitor, processMonitior);
 	monitoringThread.join();
 
 	return 0;
